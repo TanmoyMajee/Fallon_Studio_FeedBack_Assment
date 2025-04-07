@@ -1,0 +1,57 @@
+/* Default light theme */
+:root {
+  --background-color: #ffffff;
+  --card-background: #ffffff;
+  --active-tab-bg: #ffffff;
+  --inactive-tab-bg: #f3f4f6;
+  --text-color: #000000;
+  --secondary-text: #6b7280;
+  --border-color: #e5e7eb;
+  --highlight-color: #3b82f6;
+  --button-bg: #f3f4f6;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --background-color: #111827;
+  --card-background: #1f2937;
+  --active-tab-bg: #1f2937;
+  --inactive-tab-bg: #374151;
+  --text-color: #ffffff;
+  --secondary-text: #d1d5db;
+  --border-color: #4b5563;
+  --highlight-color: #60a5fa;
+  --button-bg: #374151;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-background);
+}
+
+.tab-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.active-tab {
+  background-color: var(--active-tab-bg);
+  color: var(--highlight-color);
+}
+
+.inactive-tab {
+  background-color: var(--inactive-tab-bg);
+  color: var(--secondary-text);
+}
+
+.secondary-text {
+  color: var(--secondary-text);
+}
+
+.theme-button {
+  background-color: var(--button-bg);
+}
