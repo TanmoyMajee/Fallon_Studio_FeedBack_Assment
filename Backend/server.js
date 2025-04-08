@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./util/DbConnect');
+const connectDB = require('./util/db');
 const { createFeedback, getAllFeedback } = require('./Controller/feedbackController');
 
 const app = express();
