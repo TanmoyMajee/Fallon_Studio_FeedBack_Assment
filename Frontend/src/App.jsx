@@ -15,7 +15,7 @@ export default function App() {
     if (activeTab === 'view' ) {
       setLoading(true);
       axios
-        .get('http://localhost:5000/api/feedback')
+        .get('https://fallon-studio-feedback-assment-backend.onrender.com/api/feedback')
         .then((response) => {
           console.log('Feedback data:', response);
           setFeedbackData(response.data.data);

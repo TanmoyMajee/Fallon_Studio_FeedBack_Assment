@@ -17,7 +17,7 @@ export default function FeedBackForm() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/feedback', {
+      const response = await axios.post('https://fallon-studio-feedback-assment-backend.onrender.com/api/feedback', {
         name,
         email,
         feedback,
@@ -36,7 +36,7 @@ export default function FeedBackForm() {
  return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="name" className="block mb-2 font-medium dark:text-gray-300">
+        <label htmlFor="name" className="block mb-2 font-medium ">
           Full Name
         </label>
         <input
@@ -49,7 +49,7 @@ export default function FeedBackForm() {
         />
       </div>
       <div>
-        <label htmlFor="email" className="block mb-2 font-medium dark:text-gray-300">
+        <label htmlFor="email" className="block mb-2 font-medium ">
           Email Address
         </label>
         <input
@@ -58,11 +58,11 @@ id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email address"
-          className="w-full p-2 border border-gray-300 dark:border-gray-600 bg-white  text-gray-900  rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-2 border border-gray-300  bg-white  text-gray-900  rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div>
-        <label htmlFor="feedback" className="block mb-2 font-medium dark:text-gray-300">
+        <label htmlFor="feedback" className="block mb-2 font-medium ">
           Feedback
         </label>
         <textarea
