@@ -13,6 +13,20 @@ Fallon_Studio_FeedBack_Assment/
 └── README.md   
 
 
+
+Tech Stack
+Frontend: React, Tailwind CSS, React Toastify
+
+Backend: Node.js, Express/Mongoose
+
+Deployment:
+
+Backend: Render
+
+Frontend: Netlify
+
+
+
 Setup & Installation
 Clone the repository:
 
@@ -31,3 +45,7 @@ bash :
 cd backend
 npm install
 npm run dev
+
+
+
+
